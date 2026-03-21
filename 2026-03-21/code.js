@@ -1,17 +1,18 @@
-// Topic: MongoDB CRUD Operations
+// Topic: React Hooks (useState/useEffect)
 
-const mongoose = require('mongoose');
+import React, { useState, useEffect } from 'react';
 
-const itemSchema = new mongoose.Schema({
-  name: String,
-  value: Number
-});
+function App() {
+  const [count, setCount] = useState(0);
 
-const Item = mongoose.model('Item', itemSchema);
+  useEffect(() => {
+    document.title = 'Count: ' + count;
+  }, [count]);
 
-async function run() {
-  await mongoose.connect('mongodb://localhost/test');
-  const newItem = new Item({ name: 'Test Item', value: 100 });
-  await newItem.save();
-  console.log('Item saved!');
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  );
 }

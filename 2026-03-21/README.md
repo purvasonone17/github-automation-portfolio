@@ -1,6 +1,6 @@
-# MongoDB CRUD Operations
+# React Hooks (useState/useEffect)
 
-Understanding Create, Read, Update, and Delete in MongoDB.
+A quick guide to React State and Effect hooks.
 
 ## Tech Stack
 - Node.js
