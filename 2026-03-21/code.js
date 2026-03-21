@@ -1,18 +1,13 @@
-// Topic: React Hooks (useState/useEffect)
+// Topic: Express API Basics
 
-import React, { useState, useEffect } from 'react';
+const express = require('express');
+const app = express();
+const PORT = 3000;
 
-function App() {
-  const [count, setCount] = useState(0);
+app.get('/', (req, res) => {
+  res.send('Hello from your auto-generated API!');
+});
 
-  useEffect(() => {
-    document.title = 'Count: ' + count;
-  }, [count]);
-
-  return (
-    <div>
-      <p>Count: {count}</p>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
-    </div>
-  );
-}
+app.listen(PORT, () => {
+  console.log('Server running on http://localhost:' + PORT);
+});

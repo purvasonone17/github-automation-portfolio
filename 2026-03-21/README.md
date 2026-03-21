@@ -1,6 +1,6 @@
-# React Hooks (useState/useEffect)
+# Express API Basics
 
-A quick guide to React State and Effect hooks.
+Learn how to build a basic REST API using Express.js.
 
 ## Tech Stack
 - Node.js
