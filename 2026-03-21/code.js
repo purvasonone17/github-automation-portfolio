@@ -1,13 +1,17 @@
-// Topic: Express API Basics
+// Topic: MongoDB CRUD Operations
 
-const express = require('express');
-const app = express();
-const PORT = 3000;
+const mongoose = require('mongoose');
 
-app.get('/', (req, res) => {
-  res.send('Hello from your auto-generated API!');
+const itemSchema = new mongoose.Schema({
+  name: String,
+  value: Number
 });
 
-app.listen(PORT, () => {
-  console.log('Server running on http://localhost:' + PORT);
-});
+const Item = mongoose.model('Item', itemSchema);
+
+async function run() {
+  await mongoose.connect('mongodb://localhost/test');
+  const newItem = new Item({ name: 'Test Item', value: 100 });
+  await newItem.save();
+  console.log('Item saved!');
+}

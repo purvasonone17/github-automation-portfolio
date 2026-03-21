@@ -1,6 +1,6 @@
-# Express API Basics
+# MongoDB CRUD Operations
 
-Learn how to build a basic REST API using Express.js.
+Understanding Create, Read, Update, and Delete in MongoDB.
 
 ## Tech Stack
 - Node.js
