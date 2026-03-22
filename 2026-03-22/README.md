@@ -1,6 +1,6 @@
-# Basic JWT Authentication
+# JavaScript Async/Await
 
-How to implement simple JWT-based auth.
+Master asynchronous programming in JavaScript.
 
 ## Tech Stack
 - Node.js

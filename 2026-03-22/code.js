@@ -1,9 +1,13 @@
-// Topic: Basic JWT Authentication
+// Topic: JavaScript Async/Await
 
-const jwt = require('jsonwebtoken');
+async function fetchData() {
+  try {
+    const response = await fetch('https://api.github.com/users/octocat');
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error('Error fetching data:', error);
+  }
+}
 
-const secret = 'your-secret-key';
-const token = jwt.sign({ userId: 123 }, secret, { expiresIn: '1h' });
-
-const decoded = jwt.verify(token, secret);
-console.log('Decoded Token:', decoded);
+fetchData();

@@ -1,4 +1,4 @@
-Learning points for Basic JWT Authentication:
+Learning points for JavaScript Async/Await:
 1. Understand the core concepts.
 2. Practice with real-world examples.
 3. Explore more in documentation.
