@@ -1,0 +1,4 @@
+Learning points for Basic JWT Authentication:
+1. Understand the core concepts.
+2. Practice with real-world examples.
+3. Explore more in documentation.
