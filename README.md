@@ -7,3 +7,4 @@ Daily automated code pushes to build a professional portfolio.
 - [2026-03-21](./2026-03-21/README.md)
 - [2026-03-22](./2026-03-22/README.md)
 - [2026-03-23](./2026-03-23/README.md)
+- [2026-04-03 (Live Demo)](./2026-04-03/index.html)
